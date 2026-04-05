@@ -7,8 +7,7 @@ if [[ $(cat ~/.config/hypr/monitors.conf | grep "HDMI-A-1, disable") ]]; then
   cp ~/.config/hypr/tv.mode ~/.config/hypr/monitors.conf
   cp ~/.config/hypr/tv-keys ~/.config/hypr/keybindings.conf
   sleep 3
-  awww img -o "HDMI-A-1" --transition-fps 60 --transition-type left --transition-duration 2 ~/.config/calos
-  /current/background
+  awww img -o "HDMI-A-1" --transition-fps 60 --transition-type left --transition-duration 2 ~/.config/calos/current/background
   sleep 1
   hyprctl dispatch movetoworkspace 6
   sleep 1
@@ -20,8 +19,7 @@ else
   cp ~/.config/hypr/monitor.mode ~/.config/hypr/monitors.conf
   cp ~/.config/hypr/mon-keys ~/.config/hypr/keybindings.conf
   sleep 3
-  awww img -o "DP-1" --transition-fps 144 --transition-type right --transition-duration 2 ~/.config/calos/c
-  urrent/background
+  awww img -o "DP-1" --transition-fps 144 --transition-type right --transition-duration 2 ~/.config/calos/current/background
   sleep 1
   hyprctl dispatch movetoworkspace 1
   sleep 1
